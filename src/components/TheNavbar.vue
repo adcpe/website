@@ -1,30 +1,23 @@
-<script>
-export default {
-  data() {
-    return {
-      links: [
-        { title: 'Home', url: '/' },
-        { title: 'About', url: '/about' },
-        // { title: 'FAQ', url: '/faq' },
-        { title: 'Blog', url: '/blog' }
-        // { title: 'Projects', url: '/projects' }
-      ]
-    }
-  }
-}
+<script setup>
+const links = [
+  { title: 'Home', url: '/' },
+  { title: 'About', url: '/about' },
+  { title: 'Blog', url: '/blog' }
+  // { title: 'Projects', url: '/projects' },
+  // { title: 'FAQ', url: '/faq' }
+]
 </script>
 
 <template>
   <section class="px-16">
     <div class="link-group">
       <div class="logo">
-        <NuxtLink to="/">adcdotpe</NuxtLink>
+        <RouterLink to="/">adcdotpe</RouterLink>
       </div>
       <div v-for="(link, i) in links" :key="i">
-        <RouterLink :to="link.url" class="navbar-link">{{ link.title }}</RouterLink>
-        <!-- <NuxtLink :href="link.url" activeClass="navbar-link__active" class="navbar-link">
+        <RouterLink :to="link.url" activeClass="navbar-link__active" class="navbar-link">
           {{ link.title }}
-        </NuxtLink> -->
+        </RouterLink>
       </div>
     </div>
   </section>

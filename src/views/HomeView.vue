@@ -1,6 +1,4 @@
-<script>
-export default {}
-</script>
+<script setup></script>
 
 <template>
   <section class="content">
@@ -16,7 +14,11 @@ export default {}
       </p>
       <p class="my-3">
         This is my
-        <a href="https://joelhooks.com/digital-garden" class="inline-link" target="_blank">
+        <a
+          href="https://joelhooks.com/digital-garden"
+          class="inline-link"
+          target="_blank"
+          rel="noopener noreferrer">
           digital garden</a
         >. If it seems empty or unfinished, check it later. It might have changed.
       </p>
