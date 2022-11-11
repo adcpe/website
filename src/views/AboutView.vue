@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="content">
+  <section class="content w-4/5">
     <h1 class="title text-4xl mb-2">About</h1>
     <div class="text-xl mt-3">
       <p class="my-4">
