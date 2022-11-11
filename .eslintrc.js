@@ -4,8 +4,8 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    'standard'
+    'standard',
+    'plugin:vue/vue3-essential'
   ],
   overrides: [
   ],
@@ -17,5 +17,6 @@ module.exports = {
     'vue'
   ],
   rules: {
+    'space-before-function-paren': ['error', 'never']
   }
 }
